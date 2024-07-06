@@ -1,8 +1,4 @@
-﻿using Carter;
-using Mapster;
-using MediatR;
-
-namespace Catalog.API.Products.CreateProduct
+﻿namespace Catalog.API.Products.CreateProduct
 {
     public record CreateProductRequest(
         string Name,
@@ -17,12 +13,18 @@ namespace Catalog.API.Products.CreateProduct
     {
         public void AddRoutes(IEndpointRouteBuilder app)
         {
-            app.MapPost("/api/products", async (CreateProductRequest request, ISender sender) =>
+            app.MapPost("/api/products",
+                async (CreateProductRequest request, ISender sender) =>
             {
                 var command = request.Adapt<CreateProductCommand>();
                 var result = await sender.Send(command);
                 var response = result.Adapt<CreateProductResponse>();
-                return Results.Created($"/api/products/{result.id}", response);
+
+                // testing with same record rather than using command record
+                // this will return an object but not specifc type
+                // so it is recommended to use command record
+                //var result = await sender.Send(request);
+                return Results.Created($"/api/products/{result.id}", result);
             })
                 .WithName("CreateProduct")
                 .Produces<CreateProductResponse>(StatusCodes.Status201Created)
@@ -30,5 +32,6 @@ namespace Catalog.API.Products.CreateProduct
                 .WithSummary("Creates a new product")
                 .WithDescription("Creates a new product");
         }
+
     }
 }

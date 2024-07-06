@@ -1,8 +1,4 @@
-﻿using BuildingBlocks.CQRS;
-using Catalog.API.Models;
-using Marten;
-
-namespace Catalog.API.Products.CreateProduct
+﻿namespace Catalog.API.Products.CreateProduct
 {
     public record CreateProductCommand(
         string Name,
@@ -25,11 +21,11 @@ namespace Catalog.API.Products.CreateProduct
 
             var product = new Product
             {
-                Id = Guid.NewGuid(),
                 Name = command.Name,
                 Category = command.Category,
                 Description = command.Description,
                 ImageFile = command.ImageFile,
+                Price = command.Price
             };
 
             // Save to database.

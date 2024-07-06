@@ -1,8 +1,6 @@
-using Carter;
-using Marten;
-
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddCarter();
+builder.Services.AddLogging();
 builder.Services.AddMediatR(
     config => config.RegisterServicesFromAssembly(typeof(Program).Assembly));
 builder.Services.AddMarten(options =>
