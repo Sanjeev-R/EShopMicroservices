@@ -27,9 +27,9 @@ jobs:
 
      - name: Restore dependenciess
        working-directory: src
-       run: dotnet restore
+       run: dotnet restore eshop-microservices.sln
 
      - name: Build
        if: success() || failure()
        working-directory: src
-       run: dotnet build --configuration Release
+       run: dotnet build --configuration Release eshop-microservices.sln
