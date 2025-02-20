@@ -21,6 +21,10 @@ jobs:
      - name: List directory contents
        run: ls -al # Lists all files and directories in the current directory
 
+     - name: List src directory contents
+       working-directory: src
+       run: ls -al # Lists all files and directories in the src directory
+
      - name: Restore dependenciess
        working-directory: src
        run: dotnet restore
