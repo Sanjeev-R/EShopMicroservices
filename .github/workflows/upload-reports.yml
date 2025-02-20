@@ -41,7 +41,7 @@ jobs:
     - name: Move Only HTML Files to Deployment Folder
       run: |
         mkdir -p html-files
-        find /home/runner/work/EShopMicroservices/EShopMicroservices/src/Services/Catalog/Catalog.API/bin/Release/net8.0 -name "*.html" -exec rsync --relative {} html-files/ \;
+        find /home/runner/work/EShopMicroservices/EShopMicroservices/src/Services/Catalog/Catalog.API/bin/Release/net8.0 -name "*.html" -exec cp {} html-files/ \;
 
     - name: Deploy Reports to GitHub Pages
       if: success() || failure()
