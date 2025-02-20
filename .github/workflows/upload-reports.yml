@@ -7,59 +7,66 @@ env:
   DOTNET_VERSION: '8.0.x'
 
 jobs:
-   automation-tests:
-     name: test upload results to github pages
-     runs-on: ubuntu-latest
+  automation-tests:
+    name: test upload results to github pages
+    runs-on: ubuntu-latest
 
-     permissions:
-        contents: read
-        pages: write
-        id-token: write
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
 
-     steps:
-     - uses: actions/checkout@v4
-     - name: Set up .NET SDK
-       uses: actions/setup-dotnet@v3
-       with:
-         dotnet-version: '8.0.x'
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up .NET SDK
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '8.0.x'
 
-     - name: List directory contents
-       run: ls -al # Lists all files and directories in the current directory
+    - name: List directory contents
+      run: ls -al # Lists all files and directories in the current directory
 
-     - name: List src directory contents
-       working-directory: src
-       run: ls -al # Lists all files and directories in the src directory
+    - name: List src directory contents
+      working-directory: src
+      run: ls -al # Lists all files and directories in the src directory
 
-     - name: Restore dependenciess
-       working-directory: src
-       run: dotnet restore eshop-microservices.sln
+    - name: Restore dependencies
+      working-directory: src
+      run: dotnet restore eshop-microservices.sln
 
-     - name: Build
-       working-directory: src
-       run: dotnet build --configuration Release eshop-microservices.sln
+    - name: Build
+      working-directory: src
+      run: dotnet build --configuration Release eshop-microservices.sln
 
-     - name: Move Only HTML Files to Deployment Folder
-       run: |
-            mkdir -p html-files
-            find /home/runner/work/EShopMicroservices/EShopMicroservices/src/Services/Catalog/Catalog.API/bin/Release/net8.0 -name "*.html" -exec rsync --relative {} html-files/ \;
+    - name: Move Only HTML Files to Deployment Folder
+      run: |
+        mkdir -p html-files
+        find /home/runner/work/EShopMicroservices/EShopMicroservices/src/Services/Catalog/Catalog.API/bin/Release/net8.0 -name "*.html" -exec rsync --relative {} html-files/ \;
 
-     - name: Deploy Reports to GitHub Pages
-       if: success() || failure()
-       uses: peaceiris/actions-gh-pages@v3
-       with:
+    - name: Deploy Reports to GitHub Pages
+      if: success() || failure()
+      uses: peaceiris/actions-gh-pages@v3
+      with:
         github_token: ${{ vars.MY_TOKEN }}
         publish_dir: "./html-files"
 
-     - name: Upload GitHub Pages artifact
-       if: success() || failure()
-       uses: actions/upload-pages-artifact@v3
-       with:
+    - name: Upload GitHub Pages artifact
+      if: success() || failure()
+      uses: actions/upload-pages-artifact@v3
+      with:
         path: ./html-files
         name: github-pages
 
-     - name: Deploy to GitHub Pages
-       if: success() || failure()
-       uses: actions/deploy-pages@v4
-       with:
+  deploy:
+    needs: automation-tests
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+
+    steps:
+    - name: Deploy to GitHub Pages
+      if: success() || failure()
+      uses: actions/deploy-pages@v4
+      with:
         artifact_name: github-pages
-        github_token: ${{ vars.MY_TOKEN }}
+        token: ${{ vars.MY_TOKEN }}
