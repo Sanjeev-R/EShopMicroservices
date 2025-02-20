@@ -25,8 +25,10 @@ jobs:
        run: ls -al # Lists all files and directories in the current directory
 
      - name: Restore dependenciess
+       working-directory: src
        run: dotnet restore
 
      - name: Build
        if: success() || failure()
+       working-directory: src
        run: dotnet build --configuration Release
