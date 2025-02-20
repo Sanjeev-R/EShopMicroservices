@@ -30,6 +30,30 @@ jobs:
        run: dotnet restore eshop-microservices.sln
 
      - name: Build
-       if: success() || failure()
        working-directory: src
        run: dotnet build --configuration Release eshop-microservices.sln
+
+     - name: Move Only HTML Files to Deployment Folder
+       run: |
+            mkdir -p html-files
+            find /home/runner/work/EShopMicroservices/EShopMicroservices/src/Services/Catalog/Catalog.API/bin/Release/net8.0 -name "*.html" -exec rsync --relative {} html-files/ \;
+
+     - name: Deploy Reports to GitHub Pages
+       if: success() || failure()
+       uses: peaceiris/actions-gh-pages@v3
+       with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: "./html-files"
+
+     - name: Upload GitHub Pages artifact
+       if: success() || failure()
+       uses: actions/upload-pages-artifact@v3
+       with:
+        path: ./html-files
+        name: github-pages
+
+     - name: Deploy to GitHub Pages
+       if: success() || failure()
+       uses: actions/deploy-pages@v4
+       with:
+        artifact_name: github-pages
