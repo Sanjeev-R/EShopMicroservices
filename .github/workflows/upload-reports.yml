@@ -21,6 +21,9 @@ jobs:
      - name: Navigate to src directory
        run: cd src
 
+     - name: List directory contents
+       run: ls -al # Lists all files and directories in the current directory
+
      - name: Restore dependenciess
        run: dotnet restore
 
