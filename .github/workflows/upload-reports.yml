@@ -6,15 +6,15 @@ on:
 env:
   DOTNET_VERSION: '8.0.x'
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   automation-tests:
     name: test upload results to github pages
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
 
     steps:
     - uses: actions/checkout@v4
