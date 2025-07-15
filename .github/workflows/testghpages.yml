@@ -1,54 +1,97 @@
-name: Test Report Aggregation (Dry Run)
+name: Test Deployment Pipeline
 
 on:
-  workflow_dispatch:  # Manual trigger only
-  push:
-    paths:
-      - 'bin/Reports/**'  # Only run if test reports change
+  workflow_dispatch:
+    inputs:
+      rerun_feature:
+        description: 'Comma-separated features to rerun (leave empty for full run)'
+        required: false
+        default: ''
+
+env:
+  REPORT_SOURCE_DIR: ./bin/TestReports # Where your test reports are stored
+  ARTIFACT_RETENTION_DAYS: 1 # For testing
 
 jobs:
-  dry-run-aggregate-reports:
+  # --- SIMULATED TEST JOBS (NO ACTUAL TESTS RUN) ---
+  simulate-tests:
+    strategy:
+      matrix:
+        feature: ['tradingprograms', 'imports', 'mechanisms', 'reports', 'calculations']
+      # Only rerun specified features if input provided
+      exclude: ${{ fromJSON(contains(github.event.inputs.rerun_feature, '') && '[]' || format('[{{0}}]', join(map(needs.prepare.outputs.all_features, x => format('{{"feature": "{0}"}}', x), ','))) }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Simulate Test Reports
+      - uses: actions/checkout@v4
+      
+      - name: Simulate test execution
         run: |
-          # Copy pre-existing reports from bin/ to a test directory
-          mkdir -p dry-run-html-files
-          cp -r ./bin/Reports/* dry-run-html-files/ || echo "No reports found (expected in dry run)"
-
-      - name: Generate Dashboard (Dry Run)
-        run: |
-          TEMPLATE_CONTENT=$(cat .github/workflow-templates/test-report-template.html)
-          REPORT_LINKS=""
+          # Copy pre-generated reports for this feature
+          mkdir -p test-results/${{ matrix.feature }}
+          cp -r ${{ env.REPORT_SOURCE_DIR }}/${{ matrix.feature }}/* test-results/${{ matrix.feature }}/ || echo "No reports found (simulation)"
           
-          # Process all simulated reports
-          for dir in $(find dry-run-html-files -type d); do
-            if [ -f "$dir/index.html" ]; then
-              relative_path=$(echo $dir | sed 's|dry-run-html-files/||')
-              REPORT_LINKS+="<li><a href=\"$relative_path/index.html\">$relative_path Test Report</a></li>"
-            fi
-          done
+          # Simulate pass/fail (75% pass rate for demo)
+          if [ $(( RANDOM % 4 )) -eq 0 ]; then
+            echo "::warning::Simulating test failure"
+            exit 1
+          fi
 
-          TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M:%S UTC (Dry Run)")
-          mkdir -p dry-run-output
-          echo "${TEMPLATE_CONTENT//'{{REPORT_LINKS}}'/$REPORT_LINKS}" > dry-run-output/index.html
-          cp -r dry-run-html-files/. dry-run-output/
-
-      - name: Verify Output
-        run: |
-          echo "Generated dashboard preview:"
-          cat dry-run-output/index.html
-          echo ""
-          echo "Directory structure:"
-          find dry-run-output -type f
-
-      - name: Upload Dry-Run Artifact (for inspection)
-        if: always()
+      - name: Upload simulated results
         uses: actions/upload-artifact@v4
         with:
-          name: dry-run-report
-          path: dry-run-output/
-          retention-days: 1
+          name: test-results-${{ matrix.feature }}-${{ github.run_id }}
+          path: test-results/${{ matrix.feature }}
+          retention-days: ${{ env.ARTIFACT_RETENTION_DAYS }}
+
+  # --- AGGREGATION & DEPLOYMENT TEST ---
+  aggregate-reports:
+    needs: simulate-tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Download all test results
+        uses: actions/download-artifact@v4
+        with:
+          path: all-test-results
+          pattern: test-results-*-${{ github.run_id }}
+          merge-multiple: true
+
+      - name: Generate deployment preview
+        run: |
+          # Create simple index.html linking to all reports
+          mkdir -p gh-pages-content
+          echo "<h1>Test Deployment Preview</h1><p>Generated at $(date)</p><ul>" > gh-pages-content/index.html
+          
+          for report in $(find all-test-results -name index.html); do
+            rel_path=$(echo $report | sed 's|all-test-results/||')
+            echo "<li><a href='$rel_path'>$rel_path</a></li>" >> gh-pages-content/index.html
+          done
+          
+          echo "</ul>" >> gh-pages-content/index.html
+          cp -r all-test-results gh-pages-content/reports/
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: gh-pages-content
+          retention-days: ${{ env.ARTIFACT_RETENTION_DAYS }}
+
+  # --- SAFE DEPLOYMENT TEST ---
+  test-deploy:
+    needs: aggregate-reports
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to temporary location
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_name: gh-pages-content
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # Deploy to preview branch
+          target_branch: gh-pages-preview 
+          # Or use this to avoid production impact:
+          # environment: preview
