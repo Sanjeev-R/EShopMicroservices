@@ -1,0 +1,54 @@
+name: Test Report Aggregation (Dry Run)
+
+on:
+  workflow_dispatch:  # Manual trigger only
+  push:
+    paths:
+      - 'bin/Reports/**'  # Only run if test reports change
+
+jobs:
+  dry-run-aggregate-reports:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Simulate Test Reports
+        run: |
+          # Copy pre-existing reports from bin/ to a test directory
+          mkdir -p dry-run-html-files
+          cp -r ./bin/Reports/* dry-run-html-files/ || echo "No reports found (expected in dry run)"
+
+      - name: Generate Dashboard (Dry Run)
+        run: |
+          TEMPLATE_CONTENT=$(cat .github/workflow-templates/test-report-template.html)
+          REPORT_LINKS=""
+          
+          # Process all simulated reports
+          for dir in $(find dry-run-html-files -type d); do
+            if [ -f "$dir/index.html" ]; then
+              relative_path=$(echo $dir | sed 's|dry-run-html-files/||')
+              REPORT_LINKS+="<li><a href=\"$relative_path/index.html\">$relative_path Test Report</a></li>"
+            fi
+          done
+
+          TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M:%S UTC (Dry Run)")
+          mkdir -p dry-run-output
+          echo "${TEMPLATE_CONTENT//'{{REPORT_LINKS}}'/$REPORT_LINKS}" > dry-run-output/index.html
+          cp -r dry-run-html-files/. dry-run-output/
+
+      - name: Verify Output
+        run: |
+          echo "Generated dashboard preview:"
+          cat dry-run-output/index.html
+          echo ""
+          echo "Directory structure:"
+          find dry-run-output -type f
+
+      - name: Upload Dry-Run Artifact (for inspection)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dry-run-report
+          path: dry-run-output/
+          retention-days: 1
