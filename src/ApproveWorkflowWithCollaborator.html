@@ -1,0 +1,3120 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <title></title>
+ <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/commons/img/logo.png">
+ <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/commons/img/logo.png">
+ <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@78fa5a2421587b8228150e93142e5ba97178e85b/spark/css/spark-style.css" rel="stylesheet" />
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+ <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@78fa5a2421587b8228150e93142e5ba97178e85b/spark/js/jsontree.js"></script>
+ <style></style>
+</head>
+<body class="spa  standard">
+ <div class="app">
+  <div class="layout">
+   <div class="header navbar">
+ <div class="vheader">
+  <div class="nav-logo">
+   <a href="#">
+	 <div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c43b89d03a7c43dae8bb8f0f078bad1997af6b3b/commons/img/logo.png')"></div>
+   </a>
+  </div>
+  <ul class="nav-left">
+   <li class="search-box">
+	<a class="search-toggle" href="#"><i class="search-icon fa fa-search"></i><i class="search-icon-close fa fa-close"></i></a>
+   </li>
+   <li class="search-input">
+    <input id="search-tests" class="form-control" type="text" placeholder="Search...">
+   </li>
+  </ul>
+  <ul class="nav-right">
+   <li class="m-r-10"><a href="#"><span class="badge badge-primary"></span></a></li>
+   <li class="m-r-10">
+    <a href="#"><span class="badge badge-primary">7/1/2025 2:24:21 PM</span></a>
+   </li>
+  </ul>
+ </div>
+</div>
+   <div class="side-nav">
+ <div class="side-nav-inner">
+  <ul class="side-nav-menu">
+   <li class="nav-item dropdown" onclick="toggleView('test-view')">
+    <a id="nav-test" class="dropdown-toggle" href="#">
+     <span class="ico"><i class="fa fa-list"></i></span>
+    </a>
+   </li>
+   <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+    <a id="nav-dashboard" class="dropdown-toggle" href="#">
+     <span class="ico"><i class="fa fa-bar-chart"></i></span>
+    </a>
+   </li>
+  </ul>
+ </div>
+</div>
+
+   <div class="vcontainer">
+    <div class="main-content">
+     
+
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+      <ul class="tools pull-left">
+        <li><a href="#"><span class="font-size-14">Tests</span></a></li>
+      </ul>
+      <ul class="tools text-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+          <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+ <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>  <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>             <div class="dropdown-divider"></div>
+            <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item" status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Schedule an agreement from the agreements listing</p>
+            <p class="text-sm">
+              <span>2:24:21 PM</span> / <span>92637.48 ms</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-fail">Schedule an agreement from the agreements listing</h5>
+                  <span class='badge badge-success'>7/1/2025 2:24:21 PM</span>
+                  <span class='badge badge-danger'>7/1/2025 2:25:53 PM</span>
+                  <span class='badge badge-default'>92637.48 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+  <div class="mt-4">
+  <div class="accordion">
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>52699.79</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="2">Given I log in to the claims application as a tenant admin</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:25:13</td>
+        <td>
+<span style='font-weight: bold; color: yellow;'>Page URL is https://uk.uat.claims.enable.com/153-testing-tenant-4cea1d8e5467007055b36cd6890e2449b62c14ad/claims-listing</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:25:13</td>
+        <td>
+<span style='font-weight: bold; color: yellow;'>Login successful for Tenant Admin user: engineering.team+claims-tenant-admin@enable.com</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:25:13</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Given I log in to the claims application as a tenant admin is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:25:14</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='GivenIlogintotheclaimsapplicationasatenantadmin_20250701_142513.png' src="GivenIlogintotheclaimsapplicationasatenantadmin_20250701_142513.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>5994.67</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="3">Given I select the seeded tenant</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:25:14</td>
+        <td>
+<span style='font-weight: bold; color: yellow;'>Test tenant is not selected. Selecting the test tenant.</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:25:19</td>
+        <td>
+<span style='font-weight: bold; color: yellow;'>Selected tenant: 280-test-monitoring-tenant-cbedb627c12716eb72509732b13b049ce3e28e02</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:25:19</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Given I select the seeded tenant is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:25:20</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='GivenIselecttheseededtenant_20250701_142519.png' src="GivenIselecttheseededtenant_20250701_142519.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>1125.13</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="4">Given I navigate to the tenant settings page</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:25:21</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Given I navigate to the tenant settings page is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:25:21</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='GivenInavigatetothetenantsettingspage_20250701_142521.png' src="GivenInavigatetothetenantsettingspage_20250701_142521.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>469.54</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="5">Given I enable auto-scheduling for the tenant</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:25:21</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Given I enable auto-scheduling for the tenant is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:25:21</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='GivenIenableautoschedulingforthetenant_20250701_142521.png' src="GivenIenableautoschedulingforthetenant_20250701_142521.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>1557.71</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="6">When I open claims agreements listing page</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:25:23</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - When I open claims agreements listing page is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:25:23</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='WhenIopenclaimsagreementslistingpage_20250701_142523.png' src="WhenIopenclaimsagreementslistingpage_20250701_142523.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>5480.2</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="7">Then I should land on the claims agreements listing page</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:25:28</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Then I should land on the claims agreements listing page is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:25:28</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='ThenIshouldlandontheclaimsagreementslistingpage_20250701_142528.png' src="ThenIshouldlandontheclaimsagreementslistingpage_20250701_142528.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>581.59</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="8">When I select the 'Schedule' mode on the claims agreements listing</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:25:29</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - When I select the 'Schedule' mode on the claims agreements listing is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:25:29</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='WhenIselecttheSchedulemodeontheclaimsagreementslisting_20250701_142529.png' src="WhenIselecttheSchedulemodeontheclaimsagreementslisting_20250701_142529.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>3622.53</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="9">When I search for the agreement to schedule</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:25:32</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - When I search for the agreement to schedule is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:25:33</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='WhenIsearchfortheagreementtoschedule_20250701_142532.png' src="WhenIsearchfortheagreementtoschedule_20250701_142532.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>274.91</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="10">Then the agreement to schedule should be displayed in the listing table</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:25:33</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Then the agreement to schedule should be displayed in the listing table is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:25:33</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='Thentheagreementtoscheduleshouldbedisplayedinthelistingtable_20250701_142533.png' src="Thentheagreementtoscheduleshouldbedisplayedinthelistingtable_20250701_142533.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>483.73</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="11">When I select and schedule the agreement to schedule</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:25:33</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - When I select and schedule the agreement to schedule is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:25:33</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='WhenIselectandscheduletheagreementtoschedule_20250701_142533.png' src="WhenIselectandscheduletheagreementtoschedule_20250701_142533.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li title="Time taken"><span class='badge badge-default'>20015.64</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="12">Then the agreement is successfully scheduled</div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>Jul 01, 2025 14:25:53</td>
+        <td>
+<span style='font-weight: bold; color: red;'>Step: Then the agreement is successfully scheduled is failed with exception message Locator expected to be visible 
+Call log:
+  -   - LocatorAssertions.ToBeVisibleAsync with timeout 20000ms
+  -   - waiting for Locator("eds-toast[status = 'success']")</span><br><a href='/home/runner/work/claims-management/claims-management/src/web/tests/e2e-tests/ClaimsManagement.AutomationTests/bin/Debug/net8.0/videos/9ab88fe2f518b069c03812329e500b72.webm'>Click to view video</a>        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div> 
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="13"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Generate a one-off claim</p>
+            <p class="text-sm">
+              <span>2:25:57 PM</span> / <span>34320.41 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">Generate a one-off claim</h5>
+                  <span class='badge badge-success'>7/1/2025 2:25:57 PM</span>
+                  <span class='badge badge-danger'>7/1/2025 2:26:32 PM</span>
+                  <span class='badge badge-default'>34320.41 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+  <div class="mt-4">
+  <div class="accordion">
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>4528.4</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="14">Given I log in to the claims application as a tenant admin</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:26:01</td>
+        <td>
+<span style='font-weight: bold; color: yellow;'>Page URL is https://uk.uat.claims.enable.com/</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:26:01</td>
+        <td>
+<span style='font-weight: bold; color: yellow;'>Login successful for Tenant Admin user: engineering.team+claims-tenant-admin@enable.com</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:26:01</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Given I log in to the claims application as a tenant admin is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:26:02</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='GivenIlogintotheclaimsapplicationasatenantadmin_20250701_142601.png' src="GivenIlogintotheclaimsapplicationasatenantadmin_20250701_142601.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>12176.1</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="15">Given I select the seeded tenant</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:26:09</td>
+        <td>
+<span style='font-weight: bold; color: yellow;'>Test tenant is not selected. Selecting the test tenant.</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:26:14</td>
+        <td>
+<span style='font-weight: bold; color: yellow;'>Selected tenant: 280-test-monitoring-tenant-cbedb627c12716eb72509732b13b049ce3e28e02</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:26:14</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Given I select the seeded tenant is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:26:14</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='GivenIselecttheseededtenant_20250701_142614.png' src="GivenIselecttheseededtenant_20250701_142614.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>1133.9</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="16">When I open claim generation page</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:26:15</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - When I open claim generation page is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:26:15</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='WhenIopenclaimgenerationpage_20250701_142615.png' src="WhenIopenclaimgenerationpage_20250701_142615.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>223</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="17">Then I land on the claim generation page</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:26:15</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Then I land on the claim generation page is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:26:15</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='ThenIlandontheclaimgenerationpage_20250701_142615.png' src="ThenIlandontheclaimgenerationpage_20250701_142615.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>308.81</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="18">When I enter the claim name 'Generate one-off claim E2E test claim'</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:26:16</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - When I enter the claim name 'Generate one-off claim E2E test claim' is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:26:16</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='WhenIentertheclaimnameGenerateoneoffclaimE2Etestclaim_20250701_142616.png' src="WhenIentertheclaimnameGenerateoneoffclaimE2Etestclaim_20250701_142616.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>2359.32</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="19">When I select the trading partner named 'Claims - Enable Taps'</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:26:18</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - When I select the trading partner named 'Claims - Enable Taps' is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:26:18</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='WhenIselectthetradingpartnernamedClaimsEnableTaps_20250701_142618.png' src="WhenIselectthetradingpartnernamedClaimsEnableTaps_20250701_142618.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>4300.12</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="20">When I select the agreement named 'Current Year PL - Claims - Enable Taps 1'</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:26:22</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - When I select the agreement named 'Current Year PL - Claims - Enable Taps 1' is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:26:22</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='WhenIselecttheagreementnamedCurrentYearPLClaimsEnableTaps1_20250701_142622.png' src="WhenIselecttheagreementnamedCurrentYearPLClaimsEnableTaps1_20250701_142622.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>1322.93</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="21">When I select the frequency 'One-off'</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:26:24</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - When I select the frequency 'One-off' is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:26:24</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='WhenIselectthefrequencyOneoff_20250701_142624.png' src="WhenIselectthefrequencyOneoff_20250701_142624.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>1319.99</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="22">When I select end date as today</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:26:25</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - When I select end date as today is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:26:25</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='WhenIselectenddateastoday_20250701_142625.png' src="WhenIselectenddateastoday_20250701_142625.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>1319.63</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="23">When I click to Create the claim generation</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:26:26</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - When I click to Create the claim generation is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:26:26</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='WhenIclicktoCreatetheclaimgeneration_20250701_142626.png' src="WhenIclicktoCreatetheclaimgeneration_20250701_142626.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>852.37</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="24">Then I should land on the manage claim page</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:26:27</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Then I should land on the manage claim page is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:26:27</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='ThenIshouldlandonthemanageclaimpage_20250701_142627.png' src="ThenIshouldlandonthemanageclaimpage_20250701_142627.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>450.68</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="25">When I open the activity log page</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:26:27</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - When I open the activity log page is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:26:28</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='WhenIopentheactivitylogpage_20250701_142627.png' src="WhenIopentheactivitylogpage_20250701_142627.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>3768.76</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="26">When I search for the claim name in the activity logs table</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:26:31</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - When I search for the claim name in the activity logs table is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:26:31</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='WhenIsearchfortheclaimnameintheactivitylogstable_20250701_142631.png' src="WhenIsearchfortheclaimnameintheactivitylogstable_20250701_142631.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>227.47</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="27">Then the 'Claim scheduled' event appears in the activity listing</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:26:31</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Then the 'Claim scheduled' event appears in the activity listing is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:26:32</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='ThentheClaimscheduledeventappearsintheactivitylisting_20250701_142631.png' src="ThentheClaimscheduledeventappearsintheactivitylisting_20250701_142631.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div> 
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="28"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Approve the collaborator step as a collaborator and move the claim to ready to post</p>
+            <p class="text-sm">
+              <span>2:26:32 PM</span> / <span>108619.85 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">Approve the collaborator step as a collaborator and move the claim to ready to post</h5>
+                  <span class='badge badge-success'>7/1/2025 2:26:32 PM</span>
+                  <span class='badge badge-danger'>7/1/2025 2:28:21 PM</span>
+                  <span class='badge badge-default'>108619.85 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=28</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+  <div class="mt-4">
+  <div class="accordion">
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>40518.78</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="29">Given I log in to the claims application as a user with write permissions</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:27:12</td>
+        <td>
+<span style='font-weight: bold; color: yellow;'>Page URL is https://uk.uat.claims.enable.com/153-testing-tenant-4cea1d8e5467007055b36cd6890e2449b62c14ad/claims-listing</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:27:12</td>
+        <td>
+<span style='font-weight: bold; color: yellow;'>Login successful for Write User user: engineering.team+claims-write-user@enable.com</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:27:12</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Given I log in to the claims application as a user with write permissions is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:27:13</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='GivenIlogintotheclaimsapplicationasauserwithwritepermissions_20250701_142712.png' src="GivenIlogintotheclaimsapplicationasauserwithwritepermissions_20250701_142712.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>5747.1</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="30">Given I select the seeded tenant</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:27:13</td>
+        <td>
+<span style='font-weight: bold; color: yellow;'>Test tenant is not selected. Selecting the test tenant.</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:27:18</td>
+        <td>
+<span style='font-weight: bold; color: yellow;'>Selected tenant: 280-test-monitoring-tenant-cbedb627c12716eb72509732b13b049ce3e28e02</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:27:18</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Given I select the seeded tenant is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:27:19</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='GivenIselecttheseededtenant_20250701_142718.png' src="GivenIselecttheseededtenant_20250701_142718.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>304.87</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="31">Then I should land on claims listing page</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:27:19</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Then I should land on claims listing page is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:27:19</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='ThenIshouldlandonclaimslistingpage_20250701_142719.png' src="ThenIshouldlandonclaimslistingpage_20250701_142719.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>3216.39</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="32">When I navigate to the claim 'Claim with collaborator workflow test' from the claims listing</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:27:22</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - When I navigate to the claim 'Claim with collaborator workflow test' from the claims listing is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:27:22</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='WhenInavigatetotheclaimClaimwithcollaboratorworkflowtestfromtheclaimslisting_20250701_142722.png' src="WhenInavigatetotheclaimClaimwithcollaboratorworkflowtestfromtheclaimslisting_20250701_142722.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>1130.6</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="33">Then I should land on the manage claim page</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:27:23</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Then I should land on the manage claim page is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:27:23</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='ThenIshouldlandonthemanageclaimpage_20250701_142723.png' src="ThenIshouldlandonthemanageclaimpage_20250701_142723.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>2095.09</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="34">When I approve the draft step of a claim with collaborator workflow</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:27:25</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - When I approve the draft step of a claim with collaborator workflow is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:27:25</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='WhenIapprovethedraftstepofaclaimwithcollaboratorworkflow_20250701_142725.png' src="WhenIapprovethedraftstepofaclaimwithcollaboratorworkflow_20250701_142725.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>294.62</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="35">Then the previous workflow step with name 'Tenant user' should be shown as completed</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:27:25</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Then the previous workflow step with name 'Tenant user' should be shown as completed is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:27:26</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='ThenthepreviousworkflowstepwithnameTenantusershouldbeshownascompleted_20250701_142725.png' src="ThenthepreviousworkflowstepwithnameTenantusershouldbeshownascompleted_20250701_142725.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>40518.26</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="36">Given I log in to the claims application as a collaborator</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:28:06</td>
+        <td>
+<span style='font-weight: bold; color: yellow;'>Page URL is https://uk.uat.claims.enable.com/153-testing-tenant-4cea1d8e5467007055b36cd6890e2449b62c14ad/claims-listing</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:28:06</td>
+        <td>
+<span style='font-weight: bold; color: yellow;'>Login successful for Collaborator user: engineering.team+claims-collaborator@enable.com</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:28:06</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Given I log in to the claims application as a collaborator is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:28:06</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='GivenIlogintotheclaimsapplicationasacollaborator_20250701_142806.png' src="GivenIlogintotheclaimsapplicationasacollaborator_20250701_142806.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>5486.55</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="37">Given I select the seeded tenant</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:28:06</td>
+        <td>
+<span style='font-weight: bold; color: yellow;'>Test tenant is not selected. Selecting the test tenant.</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:28:11</td>
+        <td>
+<span style='font-weight: bold; color: yellow;'>Selected tenant: 280-test-monitoring-tenant-cbedb627c12716eb72509732b13b049ce3e28e02</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:28:11</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Given I select the seeded tenant is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:28:12</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='GivenIselecttheseededtenant_20250701_142811.png' src="GivenIselecttheseededtenant_20250701_142811.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>269.46</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="38">Then I should land on claims listing page</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:28:12</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Then I should land on claims listing page is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:28:12</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='ThenIshouldlandonclaimslistingpage_20250701_142812.png' src="ThenIshouldlandonclaimslistingpage_20250701_142812.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>3166.37</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="39">When I navigate to the claim 'Claim with collaborator workflow test' from the claims listing</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:28:15</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - When I navigate to the claim 'Claim with collaborator workflow test' from the claims listing is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:28:15</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='WhenInavigatetotheclaimClaimwithcollaboratorworkflowtestfromtheclaimslisting_20250701_142815.png' src="WhenInavigatetotheclaimClaimwithcollaboratorworkflowtestfromtheclaimslisting_20250701_142815.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>838.19</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="40">Then I should land on the manage claim page</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:28:16</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Then I should land on the manage claim page is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:28:16</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='ThenIshouldlandonthemanageclaimpage_20250701_142816.png' src="ThenIshouldlandonthemanageclaimpage_20250701_142816.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>1588.36</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="41">When I approve the current workflow step for the claim</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:28:17</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - When I approve the current workflow step for the claim is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:28:17</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='WhenIapprovethecurrentworkflowstepfortheclaim_20250701_142817.png' src="WhenIapprovethecurrentworkflowstepfortheclaim_20250701_142817.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>283.64</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="42">Then the previous workflow step with name 'Collaborator' should be shown as completed</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:28:17</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Then the previous workflow step with name 'Collaborator' should be shown as completed is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:28:18</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='ThenthepreviousworkflowstepwithnameCollaboratorshouldbeshownascompleted_20250701_142817.png' src="ThenthepreviousworkflowstepwithnameCollaboratorshouldbeshownascompleted_20250701_142817.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>3139.82</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="43">Then The status of the selected claim should be updated to Ready to post in database</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:28:21</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Then The status of the selected claim should be updated to Ready to post in database is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:28:21</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='ThenThestatusoftheselectedclaimshouldbeupdatedtoReadytopostindatabase_20250701_142821.png' src="ThenThestatusoftheselectedclaimshouldbeupdatedtoReadytopostindatabase_20250701_142821.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div> 
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="44"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Approve workflow from draft step through to ready to post status</p>
+            <p class="text-sm">
+              <span>2:28:22 PM</span> / <span>26918.2 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">Approve workflow from draft step through to ready to post status</h5>
+                  <span class='badge badge-success'>7/1/2025 2:28:22 PM</span>
+                  <span class='badge badge-danger'>7/1/2025 2:28:49 PM</span>
+                  <span class='badge badge-default'>26918.2 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=44</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+  <div class="mt-4">
+  <div class="accordion">
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>4860.8</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="45">Given I log in to the claims application as a user with write permissions</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:28:25</td>
+        <td>
+<span style='font-weight: bold; color: yellow;'>Page URL is https://uk.uat.claims.enable.com/</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:28:25</td>
+        <td>
+<span style='font-weight: bold; color: yellow;'>Login successful for Write User user: engineering.team+claims-write-user@enable.com</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:28:25</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Given I log in to the claims application as a user with write permissions is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:28:26</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='GivenIlogintotheclaimsapplicationasauserwithwritepermissions_20250701_142825.png' src="GivenIlogintotheclaimsapplicationasauserwithwritepermissions_20250701_142825.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>12383.85</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="46">Given I select the seeded tenant</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:28:34</td>
+        <td>
+<span style='font-weight: bold; color: yellow;'>Test tenant is not selected. Selecting the test tenant.</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:28:39</td>
+        <td>
+<span style='font-weight: bold; color: yellow;'>Selected tenant: 280-test-monitoring-tenant-cbedb627c12716eb72509732b13b049ce3e28e02</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:28:39</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Given I select the seeded tenant is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:28:39</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='GivenIselecttheseededtenant_20250701_142839.png' src="GivenIselecttheseededtenant_20250701_142839.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>291.37</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="47">Then I should land on claims listing page</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:28:39</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Then I should land on claims listing page is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:28:39</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='ThenIshouldlandonclaimslistingpage_20250701_142839.png' src="ThenIshouldlandonclaimslistingpage_20250701_142839.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>3381.61</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="48">When I navigate to the claim 'Claim with no collaborator workflow test' from the claims listing</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:28:42</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - When I navigate to the claim 'Claim with no collaborator workflow test' from the claims listing is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:28:43</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='WhenInavigatetotheclaimClaimwithnocollaboratorworkflowtestfromtheclaimslisting_20250701_142842.png' src="WhenInavigatetotheclaimClaimwithnocollaboratorworkflowtestfromtheclaimslisting_20250701_142842.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>824.81</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="49">Then I should land on the manage claim page</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:28:43</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Then I should land on the manage claim page is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:28:43</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='ThenIshouldlandonthemanageclaimpage_20250701_142843.png' src="ThenIshouldlandonthemanageclaimpage_20250701_142843.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>1954.21</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="50">When I approve the current workflow step for the claim</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:28:45</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - When I approve the current workflow step for the claim is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:28:45</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='WhenIapprovethecurrentworkflowstepfortheclaim_20250701_142845.png' src="WhenIapprovethecurrentworkflowstepfortheclaim_20250701_142845.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>253.67</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="51">Then the previous workflow step with name 'Draft step' should be shown as completed</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:28:45</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Then the previous workflow step with name 'Draft step' should be shown as completed is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:28:46</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='ThenthepreviousworkflowstepwithnameDraftstepshouldbeshownascompleted_20250701_142845.png' src="ThenthepreviousworkflowstepwithnameDraftstepshouldbeshownascompleted_20250701_142845.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>1564.9</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="52">When I approve the current workflow step for the claim</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:28:47</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - When I approve the current workflow step for the claim is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:28:47</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='WhenIapprovethecurrentworkflowstepfortheclaim_20250701_142847.png' src="WhenIapprovethecurrentworkflowstepfortheclaim_20250701_142847.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>270.11</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="53">Then the previous workflow step with name 'Final step' should be shown as completed</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:28:47</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Then the previous workflow step with name 'Final step' should be shown as completed is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:28:47</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='ThenthepreviousworkflowstepwithnameFinalstepshouldbeshownascompleted_20250701_142847.png' src="ThenthepreviousworkflowstepwithnameFinalstepshouldbeshownascompleted_20250701_142847.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>1126.2</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="54">Then The status of the selected claim should be updated to Ready to post in database</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:28:48</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Then The status of the selected claim should be updated to Ready to post in database is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:28:49</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='ThenThestatusoftheselectedclaimshouldbeupdatedtoReadytopostindatabase_20250701_142848.png' src="ThenThestatusoftheselectedclaimshouldbeupdatedtoReadytopostindatabase_20250701_142848.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div> 
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="55"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Post the claim and then settle it</p>
+            <p class="text-sm">
+              <span>2:28:49 PM</span> / <span>23320.8 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">Post the claim and then settle it</h5>
+                  <span class='badge badge-success'>7/1/2025 2:28:49 PM</span>
+                  <span class='badge badge-danger'>7/1/2025 2:29:12 PM</span>
+                  <span class='badge badge-default'>23320.8 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=55</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+  <div class="mt-4">
+  <div class="accordion">
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>4462.17</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="56">Given I log in to the claims application as a user with write permissions</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:28:52</td>
+        <td>
+<span style='font-weight: bold; color: yellow;'>Page URL is https://uk.uat.claims.enable.com/</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:28:52</td>
+        <td>
+<span style='font-weight: bold; color: yellow;'>Login successful for Write User user: engineering.team+claims-write-user@enable.com</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:28:52</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Given I log in to the claims application as a user with write permissions is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:28:54</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='GivenIlogintotheclaimsapplicationasauserwithwritepermissions_20250701_142852.png' src="GivenIlogintotheclaimsapplicationasauserwithwritepermissions_20250701_142852.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>12230.36</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="57">Given I select the seeded tenant</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:29:01</td>
+        <td>
+<span style='font-weight: bold; color: yellow;'>Test tenant is not selected. Selecting the test tenant.</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:29:05</td>
+        <td>
+<span style='font-weight: bold; color: yellow;'>Selected tenant: 280-test-monitoring-tenant-cbedb627c12716eb72509732b13b049ce3e28e02</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:29:05</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Given I select the seeded tenant is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:29:06</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='GivenIselecttheseededtenant_20250701_142905.png' src="GivenIselecttheseededtenant_20250701_142905.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>293.04</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="58">Then I should land on claims listing page</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:29:06</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Then I should land on claims listing page is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:29:06</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='ThenIshouldlandonclaimslistingpage_20250701_142906.png' src="ThenIshouldlandonclaimslistingpage_20250701_142906.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>2593.38</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="59">When I navigate to the claim 'Post and Settle claim test' from the claims listing</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:29:08</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - When I navigate to the claim 'Post and Settle claim test' from the claims listing is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:29:09</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='WhenInavigatetotheclaimPostandSettleclaimtestfromtheclaimslisting_20250701_142908.png' src="WhenInavigatetotheclaimPostandSettleclaimtestfromtheclaimslisting_20250701_142908.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>700.92</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="60">Then I should land on the manage claim page</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:29:09</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Then I should land on the manage claim page is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:29:09</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='ThenIshouldlandonthemanageclaimpage_20250701_142909.png' src="ThenIshouldlandonthemanageclaimpage_20250701_142909.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>994.25</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="61">When I post the claim</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:29:10</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - When I post the claim is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:29:10</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='WhenIposttheclaim_20250701_142910.png' src="WhenIposttheclaim_20250701_142910.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>536.23</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="62">Then The status of the selected claim should be updated to Posted in database</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:29:11</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Then The status of the selected claim should be updated to Posted in database is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:29:11</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='ThenThestatusoftheselectedclaimshouldbeupdatedtoPostedindatabase_20250701_142911.png' src="ThenThestatusoftheselectedclaimshouldbeupdatedtoPostedindatabase_20250701_142911.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>983.04</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="63">When I settle the claim</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:29:12</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - When I settle the claim is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:29:12</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='WhenIsettletheclaim_20250701_142912.png' src="WhenIsettletheclaim_20250701_142912.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li title="Time taken"><span class='badge badge-default'>517.23</span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <div class="node" id="64">Then The status of the selected claim should be updated to Settled in database</div>
+              <div class="status-avatar float-right"><i class="fa fa-paperclip"></i></div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Jul 01, 2025 14:29:12</td>
+        <td>
+<span style='font-weight: bold; color: green;'>Step - Then The status of the selected claim should be updated to Settled in database is passed</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Jul 01, 2025 14:29:12</td>
+        <td>
+        </td>
+      </tr>
+  </tbody>
+</table>            </div>
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='ThenThestatusoftheselectedclaimshouldbeupdatedtoSettledindatabase_20250701_142912.png' src="ThenThestatusoftheselectedclaimshouldbeupdatedtoSettledindatabase_20250701_142912.png">
+  </div>
+ </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div> 
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="test-content scrollable">
+    <div class="test-content-tools">
+      <ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+    </div>
+    <div class="test-content-detail"><div class="detail-body"></div></div>
+  </div>
+</div>
+
+     
+
+<div class="container-fluid p-4 view dashboard-view">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0">Started</p>
+          <h3>7/1/2025 2:24:21 PM</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0">Ended</p>
+          <h3>7/1/2025 2:29:12 PM</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0 text-pass">Tests Passed</p>
+          <h3>4</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0 text-fail">Tests Failed</p>
+          <h3>1</h3>
+      </div></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">Tests</h6>
+        </div>
+        <div class="card-body">
+          <div class="">
+            <canvas id='parent-analysis' width='115' height='90'></canvas>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div><small data-tooltip='0%'>
+            <b>4</b> tests passed
+            </small>
+          </div>
+          <div>
+            <small data-tooltip='0%'><b>1</b> tests failed, 
+            <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">Steps</h6>
+        </div>
+        <div class="card-body">
+          <div class="">
+            <canvas id='child-analysis' width='115' height='90'></canvas>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div><small data-tooltip='0%'><b>58</b> steps passed</small></div>
+          <div>
+            <small data-tooltip='0%'><b>1</b> steps failed, 
+            <b>0</b> skipped, <b data-tooltip='%'>0</b> others
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">Log events</h6>
+        </div>
+        <div class="card-body">
+          <div class="">
+            <canvas id='events-analysis' width='115' height='90'></canvas>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div><small data-tooltip='0%'><b>58</b> events passed</small></div>
+          <div>
+            <small data-tooltip='0%'><b>1</b> events failed, 
+            <b data-tooltip='%'>82</b> others
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row"><div class="col-md-12">
+    <div class="card"><div class="card-header"><p>Timeline</p></div>
+      <div class="card-body pt-0"><div>
+        <canvas id="timeline" height="120"></canvas>
+      </div></div>
+    </div>
+  </div></div>
+  <script>
+	var timeline = { "Schedule an agreement from the agreements listing":92637.4786,"Generate a one-off claim":34320.4095,"Approve the collaborator step as a collaborator and move the claim to ready to post":108619.8526,"Approve workflow from draft step through to ready to post status":26918.2021,"Post the claim and then settle it":23320.7968 };
+  </script>
+  <div class="row">
+  </div>
+</div>
+<script>
+  var statusGroup = {
+    parentCount: 5,
+    childCount: 59,
+    grandChildCount: 0,
+    eventsCount: 141,
+
+passParent:4,failParent:1,warningParent:0,skipParent:0,    
+passChild:58,failChild:1,warningChild:0,skipChild:0,infoChild:0,    
+passGrandChild:0,failGrandChild:0,warningGrandChild:0,skipGrandChild:0,infoGrandChild:0,    
+passEvents:58,failEvents:1,warningEvents:0,skipEvents:0,infoEvents:82,  };
+</script>
+
+    </div>
+   </div>
+  </div>
+ </div>
+ <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/spark/js/spark-script.js"></script>
+<script type='text/javascript'></script>
+</body>
+</html>
